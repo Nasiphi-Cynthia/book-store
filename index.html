@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cynt Bookstore | Curated Stories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cynt Bookstore</h1>
+        <p>Where every page is a new scene.</p>
+    </header>
+
+    <main class="container">
+        <div class="card-container">
+            <div class="card" data-name="Sally's SciFi Adventure" data-price="19.99">
+                <div class="book-cover">🚀</div>
+                <h2>Sally's SciFi Adventure</h2>
+                <p>An epic journey through the stars with Rex.</p>
+                <span class="price">R19.99</span>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="card" data-name="Dave's Cooking Adventure" data-price="14.99">
+                <div class="book-cover">🍳</div>
+                <h2>Dave's Cooking Adventure</h2>
+                <p>From pancakes to pasta, one scene at a time.</p>
+                <span class="price">R14.99</span>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="action-bar">
+            <button class="btn main-btn" id="view-cart-btn">View Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Your Script Portfolio (Cart)</h2>
+            <div id="cart-items"></div>
+            
+            <div class="address-section">
+                <h3>Shipping Details</h3>
+                <input type="text" id="user-address" placeholder="Enter your delivery address">
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn close-btn">Close</button>
+                <button class="btn checkout-btn" id="checkout-btn">Final Cut (Checkout)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
